@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --white-text-color: hsl(213 31% 91%);
+    --red-color: rgb(255 45 32 / 1);
+}
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+
+body {
+    scroll-behavior: smooth;
+    color: hsl(213 31% 91%);
+    overflow-x: hidden;
+}
+
+.nav_section {
+    background-color: #0d102a;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.nav_main {
+    height: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav_1 a{
+    display: flex;
+    align-items: center;
+}
+
+.nav_arrow {
+    width: 2rem;
+    height: 2rem;
+    color: rgb(255 45 32 / 1);
+}
+
+.nav_main_text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: transparent;
+    background-clip: text !important;
+    -webkit-background-clip: text;
+    background: linear-gradient(90deg, rgba(255,45,32,1) 0%, rgba(168,85,247,1) 36%);
+    margin-left: 0.5rem;
+}
+
+.nav_2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav_2 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_2 ul li a {
+    font-weight: 500;
+    color: var(--white-text-color);
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    margin-left: 0.25rem;
+    margin-right: 1.25rem;
+    transition: all 0.3s ease-in-out;
+}
+.nav_2 ul li a:hover {
+    color: var(--red-color);
+}
+.cv button {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    background-color: #ff2d201a;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    gap: .5rem;
+    display: inline-flex;
+    align-items: center;
+    height: 2.25rem;
+    color: var(--white-text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.cv button:hover {
+    background-color: #ff2d2033;
+}
+
+.side-menu {
+    display: none;
+}
+
+.hamb{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Hamburger CSS */
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+        display: block;
+    }
+
+    .hamb-line {
+        background: var(--white-text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+    }
+
+    .hamb-line::before,
+    .hamb-line::after{
+        background: var(--white-text-color);
+        content: '';
+        display: block;
+        height: 92%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: 5px;
+    }
+    .hamb-line::after{
+        top: -5px;
+    }
+
+    /* Toogle Menu Icon */
+    .side-menu:checked ~ .nav_list {
+        max-height: 500px;
+    }
+
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+
+    body:has(.side-menu:checked) {
+        overflow: hidden;
+    }
+
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        width: 100%;
+        background-color: #0d102a;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .nav_list ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_list li{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .cv {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
