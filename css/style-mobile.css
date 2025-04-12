@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+    .nav_main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    /* Hamburger CSS */
+    .hamb{
+        cursor: pointer;
+        float: right;
+        /* padding: 40px 20px; */
+        display: block;
+    }
+
+    .hamb-line {
+        background: var(--white-text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+    }
+
+    .hamb-line::before,
+    .hamb-line::after{
+        background: var(--white-text-color);
+        content: '';
+        display: block;
+        height: 92%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .hamb-line::before{
+        top: 5px;
+    }
+    .hamb-line::after{
+        top: -5px;
+    }
+
+    /* Toogle Menu Icon */
+    .side-menu:checked ~ .nav_list {
+        max-height: 500px;
+    }
+
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+
+    body:has(.side-menu:checked) {
+        overflow: hidden;
+    }
+
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        width: 100%;
+        background-color: #0d102a;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .nav_list ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_list li{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .cv {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
