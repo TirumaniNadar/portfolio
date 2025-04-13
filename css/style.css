@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: rgb(209 213 219 / 1);
     --white-text-color: hsl(213 31% 91%);
+    --grey-text-light-color: rgb(156 163 175 / 1);
     --red-text-color: rgb(255 45 32 / 1);
     --red-text-light-color: rgb(255 45 32 / 0.6);
     --main-bg-color: #0d102a;
@@ -219,3 +220,36 @@ body {
     /* border-bottom: 4px solid var(--red-text-color); */
 }
 
+.ts_main {
+    color: var(--grey-text-light-color);
+    margin-bottom: 1rem;
+}
+
+.ts_list_div {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ts_list {
+    display: flex;
+    align-items: center;
+    padding-top: 0.25rem;
+    padding-right: 1rem;
+}
+
+.ts_list img {
+    height: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.ts_list img.php_svg {
+    height: 1.9rem;
+}
+
+.ts_list p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
