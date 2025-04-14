@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(209 213 219 / 1);
+    --white-light-text-color: rgb(209 213 219 / 1);
     --white-text-color: hsl(213 31% 91%);
     --grey-text-light-color: rgb(156 163 175 / 1);
     --red-text-color: rgb(255 45 32 / 1);
     --red-text-light-color: rgb(255 45 32 / 0.6);
     --main-bg-color: #0d102a;
+    --card-bg-dark-color: hsl(217.2 32.6% 17.5%);
     --padding-main-left: 1.5rem;
     --padding-main-right: 1.5rem;
     --padding-main-top: 2rem;
@@ -252,4 +254,132 @@ body {
 .ts_list p {
     margin-bottom: 0;
     font-size: 1rem;
+}
+
+.c_heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    /* color: var(--white-text-color); */
+}
+
+.about_section {
+    background-color: var(--main-bg-color);
+}
+
+.about_container {
+    padding-left: var(--padding-main-left);
+    padding-right: var(--padding-main-right);
+    padding-top: var(--padding-main-top);
+    padding-bottom: var(--padding-main-bottom);
+    margin: auto;
+    max-width: 1400px;
+}
+
+.c_heading {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: white;
+    text-align: center;
+}
+
+.c_line {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: var(--red-text-color);
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.c_description {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--white-light-text-color);
+    text-align: center;
+}
+
+.about_img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 1rem;
+    /* border-bottom: 4px solid var(--red-text-color); */
+}
+
+.cont_heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.cont_desc {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.as_cont {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: var(--card-bg-dark-color);
+    border: rgb(31 41 55 / 1);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.ase_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--red-text-color);
+    stroke: var(--red-text-color);
+    margin-bottom: 1rem;
+}
+
+.asp_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: rgb(37 99 235 / 1);
+    stroke: rgb(37 99 235 / 1);
+    margin-bottom: 1rem;
+}
+
+.as_heading {
+    color: var(--white-text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.as_description {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.about_img_div {
+    position: relative;
+}
+
+.about_img_circle {
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10rem;
+    background-color: var(--red-text-color);
+    color: white;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
