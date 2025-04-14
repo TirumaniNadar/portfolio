@@ -9,7 +9,7 @@
     --red-text-color: rgb(255 45 32 / 1);
     --red-text-light-color: rgb(255 45 32 / 0.6);
     --main-bg-color: #0d102a;
-    --card-bg-dark-color: hsl(217.2 32.6% 17.5%);
+    --card-bg-dark-color: 217.2 32.6% 17.5%;
     --padding-main-left: 1.5rem;
     --padding-main-right: 1.5rem;
     --padding-main-top: 2rem;
@@ -17,6 +17,7 @@
     --sm-font-size: 0.875rem;
     --sm-line-height: 1.25rem;
     --bg-light-red: #ff2d201a;
+    background-color: var(--main-bg-color);
 }
 
 /* *, *::before, *::after {
@@ -28,6 +29,11 @@ body {
     scroll-behavior: smooth;
     color: hsl(213 31% 91%);
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav_section {
@@ -330,7 +336,7 @@ body {
 .as_cont {
     text-align: center;
     padding: 2rem 1.5rem;
-    background-color: var(--card-bg-dark-color);
+    background-color: hsl(var(--card-bg-dark-color));
     border: rgb(31 41 55 / 1);
     border-radius: 0.5rem;
     margin-bottom: 2rem;
@@ -342,6 +348,7 @@ body {
     color: var(--red-text-color);
     stroke: var(--red-text-color);
     margin-bottom: 1rem;
+    background-color: transparent;
 }
 
 .asp_icon {
@@ -350,6 +357,7 @@ body {
     color: rgb(37 99 235 / 1);
     stroke: rgb(37 99 235 / 1);
     margin-bottom: 1rem;
+    background-color: transparent;
 }
 
 .as_heading {
@@ -357,11 +365,13 @@ body {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
+    background-color: transparent;
 }
 
 .as_description {
     font-size: .875rem;
     line-height: 1.25rem;
+    background-color: transparent;
 }
 
 .about_img_div {
@@ -381,5 +391,65 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+}
+
+.a_end {
+    text-align: center;
+}
+
+.ems_svg {
+    width: 1rem;
+    animation: bounce 1.3s infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-0.5rem);
+    }
+    75% {
+        transform: translateY(-0.25rem);
+    }   
+}
+
+.skills_section {
+    background-color: hsl(var(--card-bg-dark-color) / 0.05);
+}
+
+.skills_container {
+    padding-left: var(--padding-main-left);
+    padding-right: var(--padding-main-right);
+    padding-top: var(--padding-main-top);
+    padding-bottom: var(--padding-main-bottom);
+    max-width: 1400px;
+    margin: auto;
+}
+
+.sk_heading{
+}
+
+.sk_heading p{
+    margin-left: 0.75rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.sk_inital {
+    color: var(--red-text-color);
+    background-color: #ff2d201a;
+    border-radius: 9999px;
+    height: 1.75rem;
+    width: 1.75rem;
+    text-align: center;
+}
+.sk_inital span {
+    color: var(--red-text-color);
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 700;
 }
