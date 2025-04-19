@@ -17,13 +17,176 @@
     --sm-font-size: 0.875rem;
     --sm-line-height: 1.25rem;
     --bg-light-red: #ff2d201a;
-    background-color: var(--main-bg-color);
+    --card-foreground: 213 31% 91%;
+    --muted: 217.2 32.6% 17.5%;
+
+    --sk-red: 255, 45, 32;
+    --sk-light-voilet: 119, 123, 179;
+    --sk-light-blue: 68, 121, 161;
+    --sk-dark-blue: 59, 130, 246;
+    --sk-white: 225, 231, 239;
+    --sk-green: 79, 192, 141;
+    --sk-dark-green: 34, 197, 94;
+    --sk-voilet: 168, 85, 247;
+    --sk-yellow: 234, 179, 8;
+    --sk-light-green: 56, 178, 172;
+    --sk-dark-yellow: 255, 153, 0;
 }
 
-/* *, *::before, *::after {
-    box-sizing: border-box;
-} */
+/* === RED === */
+.bg-sk-red-100 { background-color: rgba(var(--sk-red), 1) !important; }
+.bg-sk-red-80  { background-color: rgba(var(--sk-red), 0.8) !important; }
+.bg-sk-red-60  { background-color: rgba(var(--sk-red), 0.6) !important; }
+.bg-sk-red-40  { background-color: rgba(var(--sk-red), 0.4) !important; }
+.bg-sk-red-20  { background-color: rgba(var(--sk-red), 0.2) !important; }
 
+/* === LIGHT VOILET === */
+.bg-sk-light-voilet-100 { background-color: rgba(var(--sk-light-voilet), 1) !important; }
+.bg-sk-light-voilet-80  { background-color: rgba(var(--sk-light-voilet), 0.8) !important; }
+.bg-sk-light-voilet-60  { background-color: rgba(var(--sk-light-voilet), 0.6) !important; }
+.bg-sk-light-voilet-40  { background-color: rgba(var(--sk-light-voilet), 0.4) !important; }
+.bg-sk-light-voilet-20  { background-color: rgba(var(--sk-light-voilet), 0.2) !important; }
+
+/* === LIGHT BLUE === */
+.bg-sk-light-blue-100 { background-color: rgba(var(--sk-light-blue), 1) !important; }
+.bg-sk-light-blue-80  { background-color: rgba(var(--sk-light-blue), 0.8) !important; }
+.bg-sk-light-blue-60  { background-color: rgba(var(--sk-light-blue), 0.6) !important; }
+.bg-sk-light-blue-40  { background-color: rgba(var(--sk-light-blue), 0.4) !important; }
+.bg-sk-light-blue-20  { background-color: rgba(var(--sk-light-blue), 0.2) !important; }
+
+/* === DARK BLUE === */
+.bg-sk-dark-blue-100 { background-color: rgba(var(--sk-dark-blue), 1) !important; }
+.bg-sk-dark-blue-80  { background-color: rgba(var(--sk-dark-blue), 0.8) !important; }
+.bg-sk-dark-blue-60  { background-color: rgba(var(--sk-dark-blue), 0.6) !important; }
+.bg-sk-dark-blue-40  { background-color: rgba(var(--sk-dark-blue), 0.4) !important; }
+.bg-sk-dark-blue-20  { background-color: rgba(var(--sk-dark-blue), 0.2) !important; }
+
+/* === WHITE === */
+.bg-sk-white-100 { background-color: rgba(var(--sk-white), 1) !important; }
+.bg-sk-white-80  { background-color: rgba(var(--sk-white), 0.8) !important; }
+.bg-sk-white-60  { background-color: rgba(var(--sk-white), 0.6) !important; }
+.bg-sk-white-40  { background-color: rgba(var(--sk-white), 0.4) !important; }
+.bg-sk-white-20  { background-color: rgba(var(--sk-white), 0.2) !important; }
+
+/* === GREEN === */
+.bg-sk-green-100 { background-color: rgba(var(--sk-green), 1) !important; }
+.bg-sk-green-80  { background-color: rgba(var(--sk-green), 0.8) !important; }
+.bg-sk-green-60  { background-color: rgba(var(--sk-green), 0.6) !important; }
+.bg-sk-green-40  { background-color: rgba(var(--sk-green), 0.4) !important; }
+.bg-sk-green-20  { background-color: rgba(var(--sk-green), 0.2) !important; }
+
+/* === DARK GREEN === */
+.bg-sk-dark-green-100 { background-color: rgba(var(--sk-dark-green), 1) !important; }
+.bg-sk-dark-green-80  { background-color: rgba(var(--sk-dark-green), 0.8) !important; }
+.bg-sk-dark-green-60  { background-color: rgba(var(--sk-dark-green), 0.6) !important; }
+.bg-sk-dark-green-40  { background-color: rgba(var(--sk-dark-green), 0.4) !important; }
+.bg-sk-dark-green-20  { background-color: rgba(var(--sk-dark-green), 0.2) !important; }
+
+/* === VOILET === */
+.bg-sk-voilet-100 { background-color: rgba(var(--sk-voilet), 1) !important; }
+.bg-sk-voilet-80  { background-color: rgba(var(--sk-voilet), 0.8) !important; }
+.bg-sk-voilet-60  { background-color: rgba(var(--sk-voilet), 0.6) !important; }
+.bg-sk-voilet-40  { background-color: rgba(var(--sk-voilet), 0.4) !important; }
+.bg-sk-voilet-20  { background-color: rgba(var(--sk-voilet), 0.2) !important; }
+
+/* === YELLOW === */
+.bg-sk-yellow-100 { background-color: rgba(var(--sk-yellow), 1) !important; }
+.bg-sk-yellow-80  { background-color: rgba(var(--sk-yellow), 0.8) !important; }
+.bg-sk-yellow-60  { background-color: rgba(var(--sk-yellow), 0.6) !important; }
+.bg-sk-yellow-40  { background-color: rgba(var(--sk-yellow), 0.4) !important; }
+.bg-sk-yellow-20  { background-color: rgba(var(--sk-yellow), 0.2) !important; }
+
+/* === LIGHT GREEN === */
+.bg-sk-light-green-100 { background-color: rgba(var(--sk-light-green), 1) !important; }
+.bg-sk-light-green-80  { background-color: rgba(var(--sk-light-green), 0.8) !important; }
+.bg-sk-light-green-60  { background-color: rgba(var(--sk-light-green), 0.6) !important; }
+.bg-sk-light-green-40  { background-color: rgba(var(--sk-light-green), 0.4) !important; }
+.bg-sk-light-green-20  { background-color: rgba(var(--sk-light-green), 0.2) !important; }
+
+/* === DARK YELLOW === */
+.bg-sk-dark-yellow-100 { background-color: rgba(var(--sk-dark-yellow), 1) !important; }
+.bg-sk-dark-yellow-80  { background-color: rgba(var(--sk-dark-yellow), 0.8) !important; }
+.bg-sk-dark-yellow-60  { background-color: rgba(var(--sk-dark-yellow), 0.6) !important; }
+.bg-sk-dark-yellow-40  { background-color: rgba(var(--sk-dark-yellow), 0.4) !important; }
+.bg-sk-dark-yellow-20  { background-color: rgba(var(--sk-dark-yellow), 0.2) !important; }
+
+/* TEXT */
+/* === RED === */
+.text-sk-red-100 { color: rgba(var(--sk-red), 1) !important; }
+.text-sk-red-80  { color: rgba(var(--sk-red), 0.8) !important; }
+.text-sk-red-60  { color: rgba(var(--sk-red), 0.6) !important; }
+.text-sk-red-40  { color: rgba(var(--sk-red), 0.4) !important; }
+.text-sk-red-20  { color: rgba(var(--sk-red), 0.2) !important; }
+
+/* === LIGHT VOILET === */
+.text-sk-light-voilet-100 { color: rgba(var(--sk-light-voilet), 1) !important; }
+.text-sk-light-voilet-80  { color: rgba(var(--sk-light-voilet), 0.8) !important; }
+.text-sk-light-voilet-60  { color: rgba(var(--sk-light-voilet), 0.6) !important; }
+.text-sk-light-voilet-40  { color: rgba(var(--sk-light-voilet), 0.4) !important; }
+.text-sk-light-voilet-20  { color: rgba(var(--sk-light-voilet), 0.2) !important; }
+
+/* === LIGHT BLUE === */
+.text-sk-light-blue-100 { color: rgba(var(--sk-light-blue), 1) !important; }
+.text-sk-light-blue-80  { color: rgba(var(--sk-light-blue), 0.8) !important; }
+.text-sk-light-blue-60  { color: rgba(var(--sk-light-blue), 0.6) !important; }
+.text-sk-light-blue-40  { color: rgba(var(--sk-light-blue), 0.4) !important; }
+.text-sk-light-blue-20  { color: rgba(var(--sk-light-blue), 0.2) !important; }
+
+/* === DARK BLUE === */
+.text-sk-dark-blue-100 { color: rgba(var(--sk-dark-blue), 1) !important; }
+.text-sk-dark-blue-80  { color: rgba(var(--sk-dark-blue), 0.8) !important; }
+.text-sk-dark-blue-60  { color: rgba(var(--sk-dark-blue), 0.6) !important; }
+.text-sk-dark-blue-40  { color: rgba(var(--sk-dark-blue), 0.4) !important; }
+.text-sk-dark-blue-20  { color: rgba(var(--sk-dark-blue), 0.2) !important; }
+
+/* === WHITE === */
+.text-sk-white-100 { color: rgba(var(--sk-white), 1) !important; }
+.text-sk-white-80  { color: rgba(var(--sk-white), 0.8) !important; }
+.text-sk-white-60  { color: rgba(var(--sk-white), 0.6) !important; }
+.text-sk-white-40  { color: rgba(var(--sk-white), 0.4) !important; }
+.text-sk-white-20  { color: rgba(var(--sk-white), 0.2) !important; }
+
+/* === GREEN === */
+.text-sk-green-100 { color: rgba(var(--sk-green), 1) !important; }
+.text-sk-green-80  { color: rgba(var(--sk-green), 0.8) !important; }
+.text-sk-green-60  { color: rgba(var(--sk-green), 0.6) !important; }
+.text-sk-green-40  { color: rgba(var(--sk-green), 0.4) !important; }
+.text-sk-green-20  { color: rgba(var(--sk-green), 0.2) !important; }
+
+/* === DARK GREEN === */
+.text-sk-dark-green-100 { color: rgba(var(--sk-dark-green), 1) !important; }
+.text-sk-dark-green-80  { color: rgba(var(--sk-dark-green), 0.8) !important; }
+.text-sk-dark-green-60  { color: rgba(var(--sk-dark-green), 0.6) !important; }
+.text-sk-dark-green-40  { color: rgba(var(--sk-dark-green), 0.4) !important; }
+.text-sk-dark-green-20  { color: rgba(var(--sk-dark-green), 0.2) !important; }
+
+/* === VOILET === */
+.text-sk-voilet-100 { color: rgba(var(--sk-voilet), 1) !important; }
+.text-sk-voilet-80  { color: rgba(var(--sk-voilet), 0.8) !important; }
+.text-sk-voilet-60  { color: rgba(var(--sk-voilet), 0.6) !important; }
+.text-sk-voilet-40  { color: rgba(var(--sk-voilet), 0.4) !important; }
+.text-sk-voilet-20  { color: rgba(var(--sk-voilet), 0.2) !important; }
+
+/* === YELLOW === */
+.text-sk-yellow-100 { color: rgba(var(--sk-yellow), 1) !important; }
+.text-sk-yellow-80  { color: rgba(var(--sk-yellow), 0.8) !important; }
+.text-sk-yellow-60  { color: rgba(var(--sk-yellow), 0.6) !important; }
+.text-sk-yellow-40  { color: rgba(var(--sk-yellow), 0.4) !important; }
+.text-sk-yellow-20  { color: rgba(var(--sk-yellow), 0.2) !important; }
+
+/* === LIGHT GREEN === */
+.text-sk-light-green-100 { color: rgba(var(--sk-light-green), 1) !important; }
+.text-sk-light-green-80  { color: rgba(var(--sk-light-green), 0.8) !important; }
+.text-sk-light-green-60  { color: rgba(var(--sk-light-green), 0.6) !important; }
+.text-sk-light-green-40  { color: rgba(var(--sk-light-green), 0.4) !important; }
+.text-sk-light-green-20  { color: rgba(var(--sk-light-green), 0.2) !important; }
+
+/* === DARK YELLOW === */
+.text-sk-dark-yellow-100 { color: rgba(var(--sk-dark-yellow), 1) !important; }
+.text-sk-dark-yellow-80  { color: rgba(var(--sk-dark-yellow), 0.8) !important; }
+.text-sk-dark-yellow-60  { color: rgba(var(--sk-dark-yellow), 0.6) !important; }
+.text-sk-dark-yellow-40  { color: rgba(var(--sk-dark-yellow), 0.4) !important; }
+.text-sk-dark-yellow-20  { color: rgba(var(--sk-dark-yellow), 0.2) !important; }
 
 body {
     scroll-behavior: smooth;
@@ -41,6 +204,7 @@ a {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 .nav_main {
@@ -154,8 +318,10 @@ a {
 .main_container {
     padding-left: var(--padding-main-left);
     padding-right: var(--padding-main-right);
-    padding-top: var(--padding-main-top);
-    padding-bottom: var(--padding-main-bottom);
+    /* padding-top: var(--padding-main-top); */
+    /* padding-bottom: var(--padding-main-bottom); */
+    padding-top: 3rem;
+    padding-bottom: 6rem;
     margin: auto;
     max-width: 1400px;
     /* display: flex;
@@ -230,7 +396,7 @@ a {
 
 .ts_main {
     color: var(--grey-text-light-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .ts_list_div {
@@ -273,7 +439,8 @@ a {
 }
 
 .about_section {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background-color: #030711;
 }
 
 .about_container {
@@ -416,7 +583,8 @@ a {
 }
 
 .skills_section {
-    background-color: hsl(var(--card-bg-dark-color) / 0.05);
+    /* background-color: var(--main-bg-color); */
+    background-color: #030711;
 }
 
 .skills_container {
@@ -429,13 +597,15 @@ a {
 }
 
 .sk_heading{
+    margin-bottom: 1.75rem;
 }
 
 .sk_heading p{
     margin-left: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 700;
+    color: var(--white-text-color);
 }
 
 .sk_inital {
@@ -444,12 +614,61 @@ a {
     border-radius: 9999px;
     height: 1.75rem;
     width: 1.75rem;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sk_inital span {
     color: var(--red-text-color);
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.25rem;
     font-weight: 700;
+}
+
+.sk_range {
+    width: 100%;
+    /* height: 0.25rem;
+    background-color: rgb(156 163 175 / 0.2);
+    border-radius: 9999px;
+    margin-left: 0.75rem; */
+}
+
+.sk_list_div {
+}
+
+.sk_list_card {
+    margin: 0.75rem 0;
+    /* margin-left: 0rem; */
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    /* background-color: hsl(var(--card-bg-dark-color) / 0.5) !important; */
+    background-color: #0e1524;
+    background-color: hsl(var(--muted) / .4);
+}
+
+.sk_list_card p {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+    color: var(--white-text-color);
+    /* color: #e1e7ef; */
+}
+
+.sk_range_div {
+    overflow: hidden;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(156 163 175 / 0.2);
+    border-radius: 9999px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.sk_range {
+    height: 0.5rem;
+    position: absolute;
+    border-radius: 9999px;
 }
