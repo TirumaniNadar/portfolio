@@ -88,4 +88,34 @@
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
+
+    .timeline::after {
+        left: 8px;
+    }
+
+    .timeline-right {
+        left: 0%;
+    }
+
+    .timeline-item.timeline-left::after {
+        left: -2px;
+    }
+
+    .timeline-item.timeline-right::after {
+        left: -2px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.right {
+        left: 0%;
+    }
+
+    .timeline-item::after {
+        left: 0%;
+    }
 }
