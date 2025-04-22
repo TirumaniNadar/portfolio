@@ -107,8 +107,12 @@
 
     .timeline-item {
         width: 100%;
-        padding-left: 30px;
-        padding-right: 25px;
+        padding-left: 30px !important;
+        padding-right: 0px !important;
+    }
+
+    .timeline-item:last-child {
+        padding-bottom: 0 !important;
     }
 
     .timeline-item.right {
@@ -117,5 +121,9 @@
 
     .timeline-item::after {
         left: 0%;
+    }
+
+    .timeline_card_content {
+        padding: 1rem;
     }
 }
