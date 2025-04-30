@@ -126,4 +126,8 @@
     .timeline_card_content {
         padding: 1rem;
     }
+
+    .timeline_card h3 {
+        font-size: 1rem;
+    }
 }
