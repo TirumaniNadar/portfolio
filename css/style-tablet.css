@@ -1,0 +1,36 @@
+@media (max-width: 1450px) {
+    .main_img_card {
+        top: 4rem;
+        right: -5px;
+    }
+
+    .main_img_card p {
+        font-size: .65rem;
+    }
+
+    .main_img_card_circle_div {
+        display: flex;
+        gap: 0.4rem;
+    }
+    
+    .red_circle {
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 9999px;
+        background-color: yellow;
+    }
+    
+    .yellow_circle {
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 9999px;
+        background-color: yellow;   
+    }
+    
+    .green_circle {
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 9999px;
+        background-color: yellow;
+    }
+}
