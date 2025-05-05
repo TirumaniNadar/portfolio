@@ -314,7 +314,7 @@ a {
 
 .main_section {
     background-color: var(--main-bg-color);
-    /* scroll-margin-top: 2rem; */
+    scroll-margin-top: 5rem;
 }
 
 .main_container {
@@ -1155,34 +1155,5 @@ ul.exp_details_list li {
     transition: all 0.6s ease;
 }
 
-.text-typing {
-    display: inline-block;
-    border-right: 2px solid white;
-    padding-right: 1ch;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 3.5s steps(13) 1s forwards, blink-caret 0.75s step-end 4s forwards;
-}
-  
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 13ch;
-    }
-}
 
-@keyframes blink-caret {
-    0% {
-      border-color: white;
-    }
-    99% {
-      border-color: white;
-    }
-    100% {
-      border-color: transparent;
-    }
-}
   
