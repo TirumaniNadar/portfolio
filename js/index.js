@@ -14,3 +14,18 @@ scrollBtn.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
+
+const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('cust-animate-up');
+            obs.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll('.cust-animation-div').forEach(card => {
+    observer.observe(card);
+});
