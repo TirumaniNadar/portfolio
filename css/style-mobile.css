@@ -135,6 +135,15 @@
         font-size: 1rem;
     }
 
+    .con-div-1 {
+        order: 2;
+    }
+
+    .con-div-2 {
+        order: 1;
+        margin-bottom: 1.75rem;
+    }
+
     .footer_con_one {
         display: flex;
         flex-direction: column;

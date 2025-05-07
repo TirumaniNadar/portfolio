@@ -1,0 +1,43 @@
+                            <div class="c_form_container">
+                                <p class="form_header">Send a Message</p>
+                                <div class="c_form">
+
+                                    <div class="input_div">
+                                        <label for="">Name</label>
+                                        <input type="text">
+                                        <!-- <p class="input_err">There is an error</p> -->
+                                    </div>
+                                    <div class="input_div">
+                                        <label for="">Email</label>
+                                        <input type="email">
+                                        <!-- <p class="input_err">There is an error</p> -->
+                                    </div>
+                                    <div class="input_div">
+                                        <label for="">Subject</label>
+                                        <input type="text">
+                                        <!-- <p class="input_err">There is an error</p> -->
+                                    </div>
+                                    <div class="input_div">
+                                        <label for="">Message</label>
+                                        <textarea name="message" id="dsa" rows="3"></textarea>
+                                        <!-- <p class="input_err">There is an error</p> -->
+                                    </div>
+
+                                    <button type="submit" class="cbtn cbtn-danger cust_submit">Send Message
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-send ml-2 h-4 w-4"
+                                            data-lov-id="src/components/Contact.tsx:158:16" data-lov-name="Send"
+                                            data-component-path="src/components/Contact.tsx" data-component-line="158"
+                                            data-component-file="Contact.tsx" data-component-name="Send"
+                                            data-component-content="%7B%22className%22%3A%22ml-2%20h-4%20w-4%22%7D">
+                                            <path
+                                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                            </path>
+                                            <path d="m21.854 2.147-10.94 10.939"></path>
+                                        </svg>
+                                    </button>
+
+                                </div>
+                            </div>
