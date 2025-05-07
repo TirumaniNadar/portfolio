@@ -1,4 +1,14 @@
 @media (max-width: 768px) {
+
+    *{
+        --padding-main-left: 1.15rem;
+        --padding-main-right: 1.15rem;
+        --padding-main-top: 1.75rem;
+        --padding-main-bottom: 1.75rem;
+        --sm-font-size: 0.875rem;
+        --sm-line-height: 1.25rem;
+    }
+
     .nav_main {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -84,6 +94,15 @@
         margin-bottom: .5rem;
     }
 
+    .main_container {
+        padding-left: var(--padding-main-left);
+        padding-right: var(--padding-main-right);
+        padding-top: 1.5rem;
+        padding-bottom: 5rem;
+        margin: auto;
+        max-width: 1400px;
+    }
+
     .main_img_div {
         padding: 0.1rem;
     }
@@ -141,7 +160,7 @@
 
     .con-div-2 {
         order: 1;
-        margin-bottom: 1.75rem;
+        margin-bottom: 2rem;
     }
 
     .footer_con_one {
