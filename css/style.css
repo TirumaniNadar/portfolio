@@ -885,6 +885,10 @@ a {
     font-size: 0.8rem;
 }
 
+.cust-exp-off p {
+    font-size: 0.9rem;
+}
+
 .exp_off {
     font-size: 0.9rem;
     color: rgb(156 163 175 / 1);
