@@ -1,4 +1,9 @@
 @media screen and (min-width: 768px) {
+
+    .tn_main {
+        font-size: 3.5rem;
+    }
+
     .text-typing {
         display: inline-block;
         border-right: 2px solid rgb(209, 213, 219);

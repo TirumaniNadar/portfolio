@@ -112,6 +112,10 @@
         padding-bottom: 1.5rem;
     }
 
+    .cv_svg {
+        height: 1rem;
+    }
+
     .timeline::after {
         left: 8px;
     }

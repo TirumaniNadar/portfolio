@@ -311,6 +311,10 @@ a {
     background-color: #ff2d2033;
 }
 
+.cv_svg {
+    height: 1.2rem;
+}
+
 .side-menu {
     display: none;
 }
