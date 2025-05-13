@@ -43,8 +43,9 @@ function printText() {
     }
 }
 
-if (!isMobile) {
-    printText();
-} else {
-    textTypingJs.innerHTML = text;
-}
+// if (!isMobile) {
+//     printText();
+// } else {
+//     textTypingJs.innerHTML = text;
+// }
+printText();
